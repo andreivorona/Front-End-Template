@@ -1,0 +1,902 @@
+.cube:hover {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    -webkit-animation: upyourscache1623319874188 5s infinite linear;
+    animation: upyourscache1623319874188 5s infinite linear;
+  
+}
+
+
+
+@keyframes upyourscache1623319874188 {
+  
+    0% { transform: rotate3d(0, 0, 0, 0deg) ;}
+    
+    100% { transform: rotate3d(1, 1, 1, 360deg) ;}
+  
+}
+
+@media (max-width: 599px) {
+    /*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body {
+    font-family:"Trebuchet MS"; 
+    font-size:14px; 
+    color:#ffed71; 
+    background:url(../images/bg1.jpg);
+}
+
+img {
+    border:none;
+}
+
+h1 { 
+    font-family:"Trebuchet MS"; 
+    font-size:22px; 
+    font-weight:normal;
+}
+
+h2 { 
+    font-family:"Trebuchet MS"; 
+    font-size:18px; 
+    font-weight:normal;
+}
+
+p { 
+    line-height:20px;
+}
+
+a {
+    text-decoration:none; 
+    color:#ffed71;
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header-wrap
+{
+    background:#000 url(../images/bg2.jpg) repeat-x;
+    height:150px;
+    width:100%; 
+}
+
+.logo
+{ 
+    width:360px; margin:0 auto;
+}
+.logo h1
+{ color:#ffffff;
+    font-size:45px;
+    font-weight: normal;
+    padding-top:70px;
+    padding-bottom:40px;
+}
+
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+.menu-wrap { 
+    overflow:hidden; 
+    margin:25px auto 30px auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu { 
+    float:left; 
+    width:660px;
+}
+
+.menu ul li { 
+    list-style:none; 
+    float:left; 
+    width:88px; 
+    text-align:center; 
+    line-height:40px; 
+    margin-right:10px;
+}
+
+.menu ul li a { 
+    text-decoration:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    text-align:center; 
+    display:block; 
+    color:#ffed71;
+}
+
+.menu ul li a:hover { 
+    color:#ffffff;  
+    background:url(../images/menu-btn.png) no-repeat;
+}
+
+
+
+/*-------------------------------------------------
+SOCIAL MEDIA CLASSES
+-------------------------------------------------*/
+.socia-wrap { 
+    float:right; 
+    width:200px;
+}
+
+.socail { 
+    overflow:hidden;
+}
+
+.socail ul li { float:left; 
+    margin-right:15px; 
+    list-style:none;
+}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner-wrap {
+    width: 100%; 
+    overflow:hidden; 
+    margin:0 auto;
+}
+
+.banner { 
+    height:430px; 
+    background:url(../images/banner-bg.png) no-repeat;
+}
+
+.banner .banner-img { 
+    margin:0 auto; 
+    padding-top:54px; 
+    width:420px;
+}
+
+.shadow { 
+    width:950px; 
+    height:38px; 
+    background:url(../images/shadow.png) no-repeat center; 
+    margin-bottom:45px;
+}
+
+.banner-img img {
+    width: 420px;
+    height: 376px;
+}
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap { 
+    background:url(../images/bg2.jpg); 
+    margin-top:80px; 
+    overflow:hidden;
+}
+
+.footer-wrap .wrap { 
+    width: 100%; 
+    margin:0 auto;
+    background:url(../images/footerbg-light.png) no-repeat center; 
+    height:208px; 
+    padding-top:60px; 
+    padding-bottom:60px; 
+    overflow:hidden;
+}
+
+.cotact {
+    width:300px;
+}
+
+.cotact ul li { 
+    border-bottom:#0d304f solid 1px; 
+    list-style:none; 
+    line-height:50px;
+}
+
+.cotact ul li img { 
+    padding-right:10px;
+}
+
+.foot-custom {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.map-img {
+    width: 120px;
+    height: 120px;
+}
+
+.panel {
+    margin-top: 15px;
+}
+
+/*-------------------------------------------------
+CUSTOM CLASSES
+-------------------------------------------------*/
+
+.card-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.o-teacher-card {
+    margin-right: 25px;
+}
+
+.card-holder-img {
+    width: 200px;
+    height: 200px;
+}
+
+.cotact li {
+    height: 20px;
+}
+
+.cotact img {
+    height: 20px;
+}
+
+}
+
+@media (min-width: 600px) {
+    /*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body {
+    font-family:"Trebuchet MS"; 
+    font-size:14px; 
+    color:#ffed71; 
+    background:url(../images/bg1.jpg);
+}
+
+img {
+    border:none;
+}
+
+h1 { 
+    font-family:"Trebuchet MS"; 
+    font-size:22px; 
+    font-weight:normal;
+}
+
+h2 { 
+    font-family:"Trebuchet MS"; 
+    font-size:18px; 
+    font-weight:normal;
+}
+
+p { 
+    line-height:20px;
+}
+
+a {
+    text-decoration:none; 
+    color:#ffed71;
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header-wrap
+{
+    background:#000 url(../images/bg2.jpg) repeat-x;
+    height:150px;
+    width:100%; 
+}
+
+.logo
+{ 
+    width:360px; margin:0 auto;
+}
+.logo h1
+{ color:#ffffff;
+    font-size:45px;
+    font-weight: normal;
+    padding-top:70px;
+    padding-bottom:40px;
+}
+
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+.menu-wrap { 
+    overflow:hidden; 
+    margin:25px auto 30px auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu { 
+    float:left; 
+    width:660px;
+}
+
+.menu ul li { 
+    list-style:none; 
+    float:left; 
+    width:88px; 
+    text-align:center; 
+    line-height:40px; 
+    margin-right:10px;
+}
+
+.menu ul li a { 
+    text-decoration:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    text-align:center; 
+    display:block; 
+    color:#ffed71;
+}
+
+.menu ul li a:hover { 
+    color:#ffffff;  
+    background:url(../images/menu-btn.png) no-repeat;
+}
+
+
+
+/*-------------------------------------------------
+SOCIAL MEDIA CLASSES
+-------------------------------------------------*/
+.socia-wrap { 
+    float:right; 
+    width:200px;
+}
+
+.socail { 
+    overflow:hidden;
+}
+
+.socail ul li { float:left; 
+    margin-right:15px; 
+    list-style:none;
+}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner-wrap {
+    width: 100%; 
+    overflow:hidden; 
+    margin:0 auto;
+}
+
+.banner { 
+    height:430px; 
+    background:url(../images/banner-bg.png) no-repeat;
+}
+
+.banner .banner-img { 
+    margin:0 auto; 
+    padding-top:54px; 
+    width:420px;
+}
+
+.shadow { 
+    width:950px; 
+    height:38px; 
+    background:url(../images/shadow.png) no-repeat center; 
+    margin-bottom:45px;
+}
+
+.banner-img img {
+    width: 420px;
+    height: 376px;
+}
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap { 
+    background:url(../images/bg2.jpg); 
+    margin-top:80px; 
+    overflow:hidden;
+}
+
+.footer-wrap .wrap { 
+    width: 100%; 
+    margin:0 auto;
+    background:url(../images/footerbg-light.png) no-repeat center; 
+    height:208px; 
+    padding-top:60px; 
+    padding-bottom:60px; 
+    overflow:hidden;
+}
+
+.cotact {
+    width:300px;
+}
+
+.cotact ul li { 
+    border-bottom:#0d304f solid 1px; 
+    list-style:none; 
+    line-height:50px;
+}
+
+.cotact ul li img { 
+    padding-right:10px;
+}
+
+.foot-custom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-img {
+    width: 165px;
+    height: 165px;
+}
+
+/*-------------------------------------------------
+CUSTOM CLASSES
+-------------------------------------------------*/
+
+.card-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.o-teacher-card {
+    margin-right: 25px;
+}
+
+.card-holder-img {
+    width: 100px;
+    height: 100px;
+}
+}
+
+@media (min-width: 900px) {
+    /*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body {
+    font-family:"Trebuchet MS"; 
+    font-size:14px; 
+    color:#ffed71; 
+    background:url(../images/bg1.jpg);
+}
+
+img {
+    border:none;
+}
+
+h1 { 
+    font-family:"Trebuchet MS"; 
+    font-size:22px; 
+    font-weight:normal;
+}
+
+h2 { 
+    font-family:"Trebuchet MS"; 
+    font-size:18px; 
+    font-weight:normal;
+}
+
+p { 
+    line-height:20px;
+}
+
+a {
+    text-decoration:none; 
+    color:#ffed71;
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header-wrap
+{
+    background:#000 url(../images/bg2.jpg) repeat-x;
+    height:150px;
+    width:100%; 
+}
+
+.logo
+{ 
+    width:360px; margin:0 auto;
+}
+.logo h1
+{ color:#ffffff;
+    font-size:45px;
+    font-weight: normal;
+    padding-top:70px;
+    padding-bottom:40px;
+}
+
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+.menu-wrap { 
+    overflow:hidden; 
+    margin:25px auto 30px auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu { 
+    float:left; 
+    width:660px;
+}
+
+.menu ul li { 
+    list-style:none; 
+    float:left; 
+    width:88px; 
+    text-align:center; 
+    line-height:40px; 
+    margin-right:10px;
+}
+
+.menu ul li a { 
+    text-decoration:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    text-align:center; 
+    display:block; 
+    color:#ffed71;
+}
+
+.menu ul li a:hover { 
+    color:#ffffff;  
+    background:url(../images/menu-btn.png) no-repeat;
+}
+
+
+
+/*-------------------------------------------------
+SOCIAL MEDIA CLASSES
+-------------------------------------------------*/
+.socia-wrap { 
+    float:right; 
+    width:200px;
+}
+
+.socail { 
+    overflow:hidden;
+}
+
+.socail ul li { float:left; 
+    margin-right:15px; 
+    list-style:none;
+}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner-wrap {
+    width: 100%; 
+    overflow:hidden; 
+    margin:0 auto;
+}
+
+.banner { 
+    height:430px; 
+    background:url(../images/banner-bg.png) no-repeat;
+}
+
+.banner .banner-img { 
+    margin:0 auto; 
+    padding-top:54px; 
+    width:420px;
+}
+
+.shadow { 
+    width:950px; 
+    height:38px; 
+    background:url(../images/shadow.png) no-repeat center; 
+    margin-bottom:45px;
+}
+
+.banner-img img {
+    width: 420px;
+    height: 376px;
+}
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap { 
+    background:url(../images/bg2.jpg); 
+    margin-top:80px; 
+    overflow:hidden;
+}
+
+.footer-wrap .wrap { 
+    width: 100%; 
+    margin:0 auto;
+    background:url(../images/footerbg-light.png) no-repeat center; 
+    height:208px; 
+    padding-top:60px; 
+    padding-bottom:60px; 
+    overflow:hidden;
+}
+
+.cotact {
+    width:300px;
+}
+
+.cotact ul li { 
+    border-bottom:#0d304f solid 1px; 
+    list-style:none; 
+    line-height:50px;
+}
+
+.cotact ul li img { 
+    padding-right:10px;
+}
+
+.foot-custom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-img {
+    width: 165px;
+    height: 165px;
+}
+
+/*-------------------------------------------------
+CUSTOM CLASSES
+-------------------------------------------------*/
+
+.card-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.o-teacher-card {
+    margin-right: 25px;
+}
+
+.card-holder-img {
+    width: 100px;
+    height: 100px;
+}
+
+}
+
+@media (min-width: 1200px) {
+    /*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body {
+    font-family:"Trebuchet MS"; 
+    font-size:14px; 
+    color:#ffed71; 
+    background:url(../images/bg1.jpg);
+}
+
+img {
+    border:none;
+}
+
+h1 { 
+    font-family:"Trebuchet MS"; 
+    font-size:22px; 
+    font-weight:normal;
+}
+
+h2 { 
+    font-family:"Trebuchet MS"; 
+    font-size:18px; 
+    font-weight:normal;
+}
+
+p { 
+    line-height:20px;
+}
+
+a {
+    text-decoration:none; 
+    color:#ffed71;
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header-wrap
+{
+    background:#000 url(../images/bg2.jpg) repeat-x; height:150px; width:100%; 
+}
+
+.logo
+{ 
+    width:360px; margin:0 auto;
+}
+.logo h1
+{ color:#ffffff;
+    font-size:45px;
+    font-weight: normal;
+    padding-top:70px;
+    padding-bottom:40px;
+}
+
+/*-------------------------------------------------
+MENU CLASSES
+-------------------------------------------------*/
+.menu-wrap { 
+    overflow:hidden; 
+    margin:25px auto 30px auto; 
+    width:960px;
+}
+
+.menu { 
+    float:left; 
+    width:660px;
+}
+
+.menu ul li { 
+    list-style:none; 
+    float:left; 
+    width:88px; 
+    text-align:center; 
+    line-height:40px; 
+    margin-right:10px;
+}
+
+.menu ul li a { 
+    text-decoration:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    text-align:center; 
+    display:block; 
+    color:#ffed71;
+}
+
+.menu ul li a:hover { 
+    color:#ffffff;  
+    background:url(../images/menu-btn.png) no-repeat;
+}
+
+
+
+/*-------------------------------------------------
+SOCIAL MEDIA CLASSES
+-------------------------------------------------*/
+.socia-wrap { 
+    float:right; 
+    width:200px;
+}
+
+.socail { 
+    overflow:hidden;
+}
+
+.socail ul li { float:left; 
+    margin-right:15px; 
+    list-style:none;
+}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner-wrap {
+    width:960px; 
+    overflow:hidden; 
+    margin:0 auto;
+}
+
+.banner { 
+    height:430px; 
+    background:url(../images/banner-bg.png) no-repeat;
+}
+
+.banner .banner-img { 
+    margin:0 auto; 
+    padding-top:54px; 
+    width:420px;
+}
+
+.shadow { 
+    width:950px; 
+    height:38px; 
+    background:url(../images/shadow.png) no-repeat center; 
+    margin-bottom:45px;
+}
+
+.banner-img img {
+    width: 420px;
+    height: 376px;
+}
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap { 
+    background:url(../images/bg2.jpg); 
+    margin-top:80px; 
+    overflow:hidden;
+}
+
+.footer-wrap .wrap { 
+    width:960px; 
+    margin:0 auto;
+    background:url(../images/footerbg-light.png) no-repeat center; 
+    height:208px; 
+    padding-top:60px; 
+    padding-bottom:60px; 
+    overflow:hidden;
+}
+
+.cotact {
+    width:300px;
+}
+
+.cotact ul li { 
+    border-bottom:#0d304f solid 1px; 
+    list-style:none; 
+    line-height:50px;
+}
+
+.cotact ul li img { 
+    padding-right:10px;
+}
+
+.foot-custom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-img {
+    width: 165px;
+    height: 165px;
+}
+
+/*-------------------------------------------------
+CUSTOM CLASSES
+-------------------------------------------------*/
+
+.card-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.o-teacher-card {
+    margin-right: 25px;
+}
+
+.card-holder-img {
+    width: 100px;
+    height: 100px;
+}
+
+}
+
+
+
