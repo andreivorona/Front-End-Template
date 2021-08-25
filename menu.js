@@ -2,15 +2,17 @@
         function menu() {
             let x = document.getElementById("myLinks");
 
-            let y = document.getElementById("topnav");
+            if (x.style.visibility === "hidden") {
+                
+                x.style.visibility = "visible";
 
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-                y.style.height = "0";
+                x.style.height = "16rem";
             }
 
             else {
-                x.style.display = "flex";
-                y.style.height = "16rem";
+                                
+                x.style.visibility = "hidden";
+
+                x.style.height = "0";
             }
         }

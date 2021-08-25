@@ -19,15 +19,21 @@
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
+#myLinks {
+    display: flex;
     flex-flow: column;
+    transition: height 0.69s ease;
+    visibility: hidden;
+    height: 0;
+    
 }
 
-
+.hidden-links {
+    margin: 0 auto;
+}
 
 /* Style navigation menu links */
-.topnav a {
+#myLinks a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,12 +42,9 @@
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+.icon-hamburger {
     background: brown;
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 50px;
     height: 50px;
 }
@@ -52,8 +55,8 @@
 }
 
 /* Add a grey background color on mouse-over */
-.topnav a:hover {
-    background-color: #ddd;
+#myLinks a {
+    background-color: white;
     color: white;
 }
 
@@ -62,7 +65,24 @@
     color: white;
 }
 
+.header-top {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
 
+.header-top div {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
 
 @media (max-width: 599px) {
 
@@ -75,8 +95,8 @@ GLOBALS CLASSES
 body {
     font-family:"Trebuchet MS"; 
     font-size:14px; 
-    color:#ffed71; 
-    background:url(../images/bg1.jpg);
+     
+    background-color: white;
 }
 
 img {
@@ -101,7 +121,7 @@ p {
 
 a {
     text-decoration:none; 
-    color:#ffed71;
+    
 }
 
 a:hover {
@@ -113,8 +133,8 @@ HEADER CLASSES
 -------------------------------------------------*/
 .header-wrap
 {
-    background:#000 url(../images/bg2.jpg) repeat-x;
-    height:150px;
+    
+    height:200px;
     width:100%; 
 }
 
@@ -139,6 +159,7 @@ MENU CLASSES
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #e9072b;
 }
 
 .menu { 
@@ -162,7 +183,7 @@ MENU CLASSES
     text-transform:uppercase; 
     text-align:center; 
     display:block; 
-    color:#ffed71;
+    color:white;
 }
 
 .menu ul li a:hover { 
@@ -199,14 +220,13 @@ BANNER CLASSES
 }
 
 .banner { 
-    height:430px; 
-    background:url(../images/banner-bg.png) no-repeat;
+    height:320px; 
+    background-color: white;
 }
 
 .banner .banner-img { 
-    margin:0 auto; 
-    padding-top:54px; 
-    width:420px;
+    margin:0 auto;  
+    width:320px;
 }
 
 .shadow { 
@@ -217,8 +237,8 @@ BANNER CLASSES
 }
 
 .banner-img img {
-    width: 420px;
-    height: 376px;
+    width: 320px;
+    height: 320px;
 }
 
 /*-------------------------------------------------
@@ -309,8 +329,8 @@ GLOBALS CLASSES
 body {
     font-family:"Trebuchet MS"; 
     font-size:14px; 
-    color:#ffed71; 
-    background:url(../images/bg1.jpg);
+    
+    background-color: white;
 }
 
 img {
@@ -335,7 +355,7 @@ p {
 
 a {
     text-decoration:none; 
-    color:#ffed71;
+    
 }
 
 a:hover {
@@ -347,8 +367,8 @@ HEADER CLASSES
 -------------------------------------------------*/
 .header-wrap
 {
-    background:#000 url(../images/bg2.jpg) repeat-x;
-    height:150px;
+    
+    height:200px;
     width:100%; 
 }
 
@@ -373,6 +393,7 @@ MENU CLASSES
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #e9072b;
 }
 
 .menu { 
@@ -396,7 +417,7 @@ MENU CLASSES
     text-transform:uppercase; 
     text-align:center; 
     display:block; 
-    color:#ffed71;
+    color:white;
 }
 
 .menu ul li a:hover { 
@@ -434,13 +455,12 @@ BANNER CLASSES
 
 .banner { 
     height:430px; 
-    background:url(../images/banner-bg.png) no-repeat;
+    background-color: white;
 }
 
 .banner .banner-img { 
-    margin:0 auto; 
-    padding-top:54px; 
-    width:420px;
+    margin:0 auto;  
+    width:430px;
 }
 
 .shadow { 
@@ -451,8 +471,8 @@ BANNER CLASSES
 }
 
 .banner-img img {
-    width: 420px;
-    height: 376px;
+    width: 430px;
+    height: 430px;
 }
 
 /*-------------------------------------------------
@@ -527,8 +547,8 @@ GLOBALS CLASSES
 body {
     font-family:"Trebuchet MS"; 
     font-size:14px; 
-    color:#ffed71; 
-    background:url(../images/bg1.jpg);
+     
+    background-color: white;
 }
 
 img {
@@ -553,7 +573,7 @@ p {
 
 a {
     text-decoration:none; 
-    color:#ffed71;
+    
 }
 
 a:hover {
@@ -565,8 +585,8 @@ HEADER CLASSES
 -------------------------------------------------*/
 .header-wrap
 {
-    background:#000 url(../images/bg2.jpg) repeat-x;
-    height:150px;
+    
+    height:200px;
     width:100%; 
 }
 
@@ -591,6 +611,7 @@ MENU CLASSES
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #e9072b;
 }
 
 .menu { 
@@ -614,7 +635,7 @@ MENU CLASSES
     text-transform:uppercase; 
     text-align:center; 
     display:block; 
-    color:#ffed71;
+    color:white;
 }
 
 .menu ul li a:hover { 
@@ -656,13 +677,12 @@ BANNER CLASSES
 
 .banner { 
     height:430px; 
-    background:url(../images/banner-bg.png) no-repeat;
+    background-color: white;
 }
 
 .banner .banner-img { 
-    margin:0 auto; 
-    padding-top:54px; 
-    width:420px;
+    margin:0 auto;  
+    width:430px;
 }
 
 .shadow { 
@@ -673,8 +693,8 @@ BANNER CLASSES
 }
 
 .banner-img img {
-    width: 420px;
-    height: 376px;
+    width: 430px;
+    height: 430px;
 }
 
 /*-------------------------------------------------
@@ -749,8 +769,8 @@ GLOBALS CLASSES
 body {
     font-family:"Trebuchet MS"; 
     font-size:14px; 
-    color:#ffed71; 
-    background:url(../images/bg1.jpg);
+     
+    background-color: white;
 }
 
 img {
@@ -775,7 +795,7 @@ p {
 
 a {
     text-decoration:none; 
-    color:#ffed71;
+    
 }
 
 a:hover {
@@ -787,7 +807,9 @@ HEADER CLASSES
 -------------------------------------------------*/
 .header-wrap
 {
-    background:#000 url(../images/bg2.jpg) repeat-x; height:150px; width:100%; 
+    
+    height:200px;
+    width:100%; 
 }
 
 .logo
@@ -809,11 +831,13 @@ MENU CLASSES
     overflow:hidden; 
     margin:25px auto 30px auto; 
     width:960px;
+    background-color: #e9072b;
 }
 
 .menu { 
     float:left; 
     width:660px;
+    
 }
 
 .menu ul li { 
@@ -832,7 +856,7 @@ MENU CLASSES
     text-transform:uppercase; 
     text-align:center; 
     display:block; 
-    color:#ffed71;
+    color: white;
 }
 
 .menu ul li a:hover { 
@@ -870,13 +894,12 @@ BANNER CLASSES
 
 .banner { 
     height:430px; 
-    background:url(../images/banner-bg.png) no-repeat;
+    background-color: white;
 }
 
 .banner .banner-img { 
-    margin:0 auto; 
-    padding-top:54px; 
-    width:420px;
+    margin:0 auto;     
+    width:430px;
 }
 
 .shadow { 
@@ -887,8 +910,8 @@ BANNER CLASSES
 }
 
 .banner-img img {
-    width: 420px;
-    height: 376px;
+    width: 430px;
+    height: 430px;
 }
 
 /*-------------------------------------------------
@@ -958,26 +981,45 @@ CUSTOM CLASSES
 /* For hamburger menu */
 
 @media (max-width: 899.98px) {
-    .topnav {
+
+    #myLinks {
         display: flex;
-        height: 16rem;
-        height: 0;
+        flex-flow: column;
         transition: height 0.69s ease;
+        visibility: hidden;
+        height: 0;
+        
     }
 
-    .header-menu {
+    .icon-hamburger {
+        display: block;
+    }
+
+    
+    #myLinks a {
+        color: rgb(189, 144, 51);       
+    }
+
+    
+
+    .menu {
         display: none;
     }
 }
 
 @media (min-width: 900px) {
-    .topnav {
+    .icon-hamburger {
+        display: none;
+    }
+    
+    #myLinks {
         display: none;
     }
 
     .header-menu {
         display: flex;
         align-items: flex-end;
+        
     }
 
     .header-links {
