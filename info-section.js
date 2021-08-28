@@ -3,6 +3,15 @@ let element = document.getElementById("card-holder-img");
 
 let infoSection = document.getElementById("info-section");
     
+
+let element2 = document.getElementById("card-holder-img2");
+
+let infoSection2 = document.getElementById("info-section2");
+
+let element3 = document.getElementById("card-holder-img3");
+
+let infoSection3 = document.getElementById("info-section3");
+
 infoSection.style.display = "none";
 
 infoSection.style.flexFlow = "column";
@@ -16,6 +25,15 @@ element.addEventListener("click", () => {
     if(infoSection.style.display === "none") {
         infoSection.style.display = "flex";
 
+        if (infoSection2.style.display === "flex") {
+            infoSection2.style.display = "none";
+        }
+
+        if (infoSection3.style.display === "flex") {
+            infoSection3.style.display = "none";
+        }
+
+        
     }
 
     else {
@@ -26,9 +44,7 @@ element.addEventListener("click", () => {
 
 
 
-let element2 = document.getElementById("card-holder-img2");
 
-let infoSection2 = document.getElementById("info-section2");
     
 infoSection2.style.display = "none";
 
@@ -43,6 +59,15 @@ element2.addEventListener("click", () => {
     if(infoSection2.style.display === "none") {
         infoSection2.style.display = "flex";
 
+        if (infoSection.style.display === "flex") {
+            infoSection.style.display = "none";
+        }
+
+        if (infoSection3.style.display === "flex") {
+            infoSection3.style.display = "none";
+        }
+
+        
     }
 
     else {
@@ -51,9 +76,7 @@ element2.addEventListener("click", () => {
     }
 })
 
-let element3 = document.getElementById("card-holder-img3");
 
-let infoSection3 = document.getElementById("info-section3");
     
 infoSection3.style.display = "none";
 
@@ -68,6 +91,15 @@ element3.addEventListener("click", () => {
     if(infoSection3.style.display === "none") {
         infoSection3.style.display = "flex";
 
+        if (infoSection2.style.display === "flex") {
+            infoSection2.style.display = "none";
+        }
+
+        if (infoSection.style.display === "flex") {
+            infoSection.style.display = "none";
+        }
+
+        
     }
 
     else {
