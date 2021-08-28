@@ -1092,6 +1092,7 @@ CUSTOM CLASSES
 .info-section p {
     font-size: 21px;
     margin-bottom: 3px;
+    color: black;
 }
 
 .info-section h1 {
@@ -1106,7 +1107,7 @@ CUSTOM CLASSES
     flex-flow: column wrap;
     font-size: 21px;
     color: rgb(128, 128, 128);
-    
+    position: relative;
 }
 
 .info-property p {
@@ -1136,6 +1137,27 @@ body {
     padding: 10px;
     overflow: hidden;
     margin-bottom: 35px;
+    position: relative;    
+}
+
+.info-section-bi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    
+}
+
+.info-section-bi-z-index {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
 }
 
 .info-section img {
