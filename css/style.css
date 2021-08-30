@@ -221,7 +221,6 @@ MENU CLASSES
 }
 
 
-
 /*-------------------------------------------------
 SOCIAL MEDIA CLASSES
 -------------------------------------------------*/
@@ -344,6 +343,10 @@ CUSTOM CLASSES
 
 .cotact img {
     height: 20px;
+}
+
+.info-section-bi-z-index {
+    height: 515px;
 }
 
 }
@@ -789,6 +792,10 @@ CUSTOM CLASSES
     height: 240px;
 }
 
+.info-section-bi-z-index {
+    height: 630px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -1006,6 +1013,10 @@ CUSTOM CLASSES
     height: 250px;
 }
 
+.info-section-bi-z-index {
+    height: 630px;
+}
+
 }
 
 /* For hamburger menu */
@@ -1156,7 +1167,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 93.5%;
     width: 100%;
     opacity: 0.3;
 }
