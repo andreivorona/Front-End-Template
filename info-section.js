@@ -1,109 +1,47 @@
+let el = document.getElementById("card-holder-img");
+let slideshowContainer = document.getElementById("slideshow-container");
 
-let element = document.getElementById("card-holder-img");
+let xIcon = document.getElementById("x-icon");
 
-let infoSection = document.getElementById("info-section");
-    
+slideshowContainer.style.display = "none";
 
-let element2 = document.getElementById("card-holder-img2");
+el.addEventListener("click", () => {
+    if (slideshowContainer.style.display === "none") {
+        slideshowContainer.style.display = "block";
+    };  
+});
 
-let infoSection2 = document.getElementById("info-section2");
+xIcon.addEventListener("click", () => {
+    if (slideshowContainer.style.display === "block") {
+        slideshowContainer.style.display = "none";
+    }   
+});
 
-let element3 = document.getElementById("card-holder-img3");
+// slideshow js
 
-let infoSection3 = document.getElementById("info-section3");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-infoSection.style.display = "none";
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-infoSection.style.flexFlow = "column";
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-infoSection.style.alignItems = "center";
-
-infoSection.style.marginTop = "35px";
-
-
-element.addEventListener("click", () => {
-    if(infoSection.style.display === "none") {
-        infoSection.style.display = "flex";
-
-        if (infoSection2.style.display === "flex") {
-            infoSection2.style.display = "none";
-        }
-
-        if (infoSection3.style.display === "flex") {
-            infoSection3.style.display = "none";
-        }
-
-        
-    }
-
-    else {
-        infoSection.style.display = "none";
-
-    }
-})
-
-
-
-
-    
-infoSection2.style.display = "none";
-
-infoSection2.style.flexFlow = "column";
-
-infoSection2.style.alignItems = "center";
-
-infoSection2.style.marginTop = "35px";
-
-
-element2.addEventListener("click", () => {
-    if(infoSection2.style.display === "none") {
-        infoSection2.style.display = "flex";
-
-        if (infoSection.style.display === "flex") {
-            infoSection.style.display = "none";
-        }
-
-        if (infoSection3.style.display === "flex") {
-            infoSection3.style.display = "none";
-        }
-
-        
-    }
-
-    else {
-        infoSection2.style.display = "none";
-
-    }
-})
-
-
-    
-infoSection3.style.display = "none";
-
-infoSection3.style.flexFlow = "column";
-
-infoSection3.style.alignItems = "center";
-
-infoSection3.style.marginTop = "35px";
-
-
-element3.addEventListener("click", () => {
-    if(infoSection3.style.display === "none") {
-        infoSection3.style.display = "flex";
-
-        if (infoSection2.style.display === "flex") {
-            infoSection2.style.display = "none";
-        }
-
-        if (infoSection.style.display === "flex") {
-            infoSection.style.display = "none";
-        }
-
-        
-    }
-
-    else {
-        infoSection3.style.display = "none";
-
-    }
-})
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  
+}
