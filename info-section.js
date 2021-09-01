@@ -29,6 +29,7 @@ container1.style.display = "none";
 holder1.addEventListener("click", () => {
   if (container1.style.display === "none") {
     container1.style.display = "block"
+    container1.scrollIntoView();
   }
 });
 
@@ -50,6 +51,7 @@ container2.style.display = "none";
 holder2.addEventListener("click", () => {
   if (container2.style.display === "none") {
     container2.style.display = "block"
+    container2.scrollIntoView();
   }
 });
 
@@ -71,6 +73,7 @@ container3.style.display = "none";
 holder3.addEventListener("click", () => {
   if (container3.style.display === "none") {
     container3.style.display = "block"
+    container3.scrollIntoView();
   }
 });
 
