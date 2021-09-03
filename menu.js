@@ -1,6 +1,12 @@
 
+let x = document.getElementById("myLinks");
+
+x.style.visibility = "hidden";
+
+x.style.height = "0";
+
         function menu() {
-            let x = document.getElementById("myLinks");
+            
 
             if (x.style.visibility === "hidden") {
                 
