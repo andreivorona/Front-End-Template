@@ -359,6 +359,15 @@ CUSTOM CLASSES
     top: 10%;
 }
 
+.aside-left, .aside-rigth {
+    display: none;
+}
+
+.contact-paragraph {
+    font-size: 22px;
+    text-align: center;
+}
+
 }
 
 @media (min-width: 600px) {
@@ -588,6 +597,15 @@ CUSTOM CLASSES
 
 .prev, .next {
     top: 15%;
+}
+
+.aside-left, .aside-rigth {
+    display: none;
+}
+
+.contact-paragraph {
+    font-size: 22px;
+    text-align: center;
 }
 
 }
@@ -827,6 +845,15 @@ CUSTOM CLASSES
     top: 25%;
 }
 
+.aside-left, .aside-rigth {
+    display: none;
+}
+
+.contact-paragraph {
+    font-size: 22px;
+    text-align: center;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -1056,6 +1083,58 @@ CUSTOM CLASSES
 
 .prev, .next {
     top: 50%;
+}
+
+.aside-left {
+    display: block;
+    position: absolute;
+    top: 715px;
+}
+
+.aside-left img {
+    width: 150px;
+    height: 507px;
+}
+
+@keyframes asideLeft {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 80%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.aside-rigth {
+    display: block;
+    position: absolute;
+    top: 715px;
+    right: 0;
+}
+
+.aside-rigth img {
+    width: 150px;
+    height: 507px;
+}
+
+@keyframes asideRigth {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 80%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.contact-paragraph {
+    font-size: 20px;
+    text-align: center;
 }
 
 }
@@ -1381,4 +1460,6 @@ body {
 .contact-main p {
     padding-top: 25px;
 }
+
+
 
