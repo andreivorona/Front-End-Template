@@ -356,10 +356,11 @@ CUSTOM CLASSES
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
+    width: 90%;
 }
 
 .prev, .next {
-    top: 10%;
+    top: 32%;
 }
 
 .aside-left, .aside-rigth {
@@ -377,6 +378,18 @@ CUSTOM CLASSES
 {
     .o-teacher-card {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 450.98px) {
+    .prev, .next {
+        top: 20%;
+    }
+}
+
+@media (max-width: 310.98px) {
+    .prev, .next {
+        top: 11%;
     }
 }
 
@@ -603,10 +616,11 @@ CUSTOM CLASSES
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
+    width: 90%;
 }
 
 .prev, .next {
-    top: 15%;
+    top: 34%;
 }
 
 .aside-left, .aside-rigth {
@@ -849,10 +863,11 @@ CUSTOM CLASSES
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+    width: 80%;
 }
 
 .prev, .next {
-    top: 25%;
+    top: 38%;
 }
 
 .aside-left, .aside-rigth {
@@ -1089,10 +1104,11 @@ CUSTOM CLASSES
   top: 50%;
   left: 50%;
   transform: translate(-50%, 20%);
+  width: 70%;
 }
 
 .prev, .next {
-    top: 50%;
+    top: 42%;
 }
 
 .aside-left {
@@ -1355,7 +1371,7 @@ body {
  
  
 .slideshow-container {
-  max-width: 1000px;
+  
   position: absolute;
   margin: auto;
   background-color: white;
