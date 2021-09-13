@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
 .cube:hover {
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
@@ -333,7 +336,7 @@ CUSTOM CLASSES
 }
 
 .card-holder-img {
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
 
@@ -368,6 +371,13 @@ CUSTOM CLASSES
     text-align: center;
 }
 
+}
+
+@media (max-width: 573.98px)
+{
+    .o-teacher-card {
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 600px) {
@@ -1137,6 +1147,17 @@ CUSTOM CLASSES
     text-align: center;
 }
 
+.slideshow-container p {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/ares/back.webp");
+    color: rgb(231, 231, 231);
+    padding: 5px 10px 5px 10px;
+}
+
+.slideshow-container h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 }
 
 /* For hamburger menu */
@@ -1240,10 +1261,12 @@ CUSTOM CLASSES
     font-size: 21px;
     color: rgb(128, 128, 128);
     position: relative;
+    text-align: center;
 }
 
 .info-property p {
     margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
